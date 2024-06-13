@@ -23,5 +23,5 @@ CREATE TABLE enrolment (
     UNIQUE (user_id, course_id)
 );
 
-CREATE INDEX idx_user_id ON Enrolments(user_id);
-CREATE INDEX idx_course_id ON Enrolments(course_id);
+CREATE INDEX idx_user_id ON enrolment(user_id);
+CREATE INDEX idx_course_id ON enrolment(course_id);
