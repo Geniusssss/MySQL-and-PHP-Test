@@ -58,3 +58,17 @@ This project is a web application built using React(`v18.3.1`) for the frontend,
 ## Usage
 1. Ensure MySQL, backend, and frontend servers are running.
 2. Access the application through the frontend server URL (`http://localhost:3000`).
+
+
+## Screenshots
+1. All enrolments
+![Screenshot 1](document/Screenshot%201.png)
+
+2. User filter
+![Screenshot 2](document/Screenshot%202.png)
+
+3. Course filter
+![Screenshot 3](document/Screenshot%203.png)
+
+4. Error Hanndling
+![Screenshot 4](document/Screenshot%204.png)

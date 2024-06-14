@@ -2,8 +2,8 @@
 // Change the parameters below to connect to your own database
 // It's not safe saved here, just for convenience
 $servername = "localhost";
-$username = "root";
-$password = "samsamsam3";
+$username = "";
+$password = "";
 $dbname = "course_management";
 
 try {
