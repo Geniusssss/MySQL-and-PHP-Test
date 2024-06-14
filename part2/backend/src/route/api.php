@@ -1,4 +1,5 @@
 <?php
+
 require_once '../src/controller/EnrolmentController.php';
 
 // Set CORS headers
@@ -40,6 +41,17 @@ try {
             // Get enrolments data
             $response = $controller->getEnrolments($limit, $offset, $userFilter, $courseFilter);
           }
+        } elseif ($path[0] === 'users') {
+          // Get the user search query from the query parameters
+          $query = isset($_GET['q']) ? $_GET['q'] : '';
+          $response = $controller->getMatchingUsers($query);
+        } elseif ($path[0] === 'courses') {
+          // Get the course search query from the query parameters
+          $query = isset($_GET['q']) ? $_GET['q'] : '';
+          $response = $controller->getMatchingCourses($query);
+        } else {
+          http_response_code(400);
+          $response = ['message' => 'Bad Request'];
         }
       } else {
         // Non-valid request
@@ -61,4 +73,5 @@ try {
 
 // Send data to the frontend as JSON
 echo json_encode($response);
+
 ?>
