@@ -1,5 +1,5 @@
 <?php
-require_once '../src/controllers/EnrolmentController.php';
+require_once '../src/controller/EnrolmentController.php';
 
 // Set the content type to JSON
 header('Content-Type: application/json');
